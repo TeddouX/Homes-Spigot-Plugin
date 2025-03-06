@@ -1,0 +1,22 @@
+name: SetHomePlugin
+version: '1.0-SNAPSHOT'
+main: net.teddy.setHomePlugin.SetHomePlugin
+api-version: '1.21'
+commands:
+  sethome:
+    description: Sets a home at the player's location
+    usage: /<command> <home_name>
+  home:
+    description: Teleports you to a home
+    usage: /<command> <home_name>
+  delhome:
+    description: Deletes a home
+    usage: /<command> <home_name>
+  seehomes:
+    description: See your homes, or if specified, another player's homes (requires permission)
+    usage: /<command> <player_name>
+
+permissions:
+  sethome.see-other-players-homes:
+    description: The ability to see other player's homes
+    default: op

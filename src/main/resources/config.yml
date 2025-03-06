@@ -1,0 +1,16 @@
+sethome-command-invalid-arguments: "&cInvalid arguments. Usage: /sethome <home_name>"
+sethome-command-home-set: "&aHome &e%s &asuccessfully set."
+
+home-command-invalid-arguments: "&cInvalid arguments. Usage: /home <home_name>"
+home-command-no-homes: "&cYou have set no homes. Try making one using the /sethome command"
+home-command-no-home-named: "&cYou have no home named &e%s&c."
+home-command-success: "&aYou have been teleported to &e%s&a."
+
+delhome-command-invalid-arguments: "&cInvalid arguments. Usage: /delhome <home_name>"
+delhome-command-success: "&aHome &e%s &asuccessfully deleted."
+
+see-homes-dont-have-permissions: "&cYou don't have permissions to see other player's home"
+see-homes-homes-amount: "&aYou have &e%s &ahomes :"
+see-homes-no-player-named: "&cNo player named &e%s&c."
+see-homes-target-player-has-no-homes: "&cPlayer &e%s &chas no homes."
+see-homes-target-player-amount: "&aPlayer &e%s &ahas &e%s &ahomes :"
