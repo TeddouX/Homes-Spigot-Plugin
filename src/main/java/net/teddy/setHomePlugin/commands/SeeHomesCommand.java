@@ -30,12 +30,9 @@ public class SeeHomesCommand implements CommandExecutor {
             // Player getting his own homes
             HashMap<String, Location> playerHomes = Utils.getPlayerHomes(player);
 
-            if (playerHomes == null) {
-                player.sendMessage(ChatColor.translateAlternateColorCodes('&',
-                        SetHomePlugin.getInstance().getConfig().getString("home-command-no-homes")));
-
+            if (playerHomes == null)
                 return true;
-            }
+
 
             int playerHomesAmount = playerHomes.size();
             if (playerHomesAmount == 0) {
@@ -65,12 +62,9 @@ public class SeeHomesCommand implements CommandExecutor {
 
             HashMap<String, Location> targetHomes = Utils.getPlayerHomes(target);
 
-            if (targetHomes == null) {
-                player.sendMessage(ChatColor.translateAlternateColorCodes('&',
-                        SetHomePlugin.getInstance().getConfig().getString("see-homes-target-player-has-no-homes").formatted(targetName)));
-
+            if (targetHomes == null)
                 return true;
-            }
+            
 
             player.sendMessage(ChatColor.translateAlternateColorCodes('&',
                     SetHomePlugin.getInstance().getConfig().getString("see-homes-target-player-amount").formatted(targetName, targetHomes.size())));
