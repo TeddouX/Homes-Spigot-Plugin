@@ -35,9 +35,6 @@ public class HomeCommand implements CommandExecutor {
 
         String homeName = sb.toString().stripTrailing();
 
-        if (playerHomes == null)
-            return true;
-
         // If the player has no home named like given
         if (playerHomes.get(homeName) == null) {
             player.sendMessage(ChatColor.translateAlternateColorCodes('&',

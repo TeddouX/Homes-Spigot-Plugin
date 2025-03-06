@@ -34,9 +34,6 @@ public class DelHomeCommand implements CommandExecutor {
 
         String homeName = sb.toString().stripTrailing();
 
-        if (playerHomes == null)
-            return true;
-
         if (playerHomes.remove(homeName) == null) {
             player.sendMessage(ChatColor.translateAlternateColorCodes('&',
                     SetHomePlugin.getInstance().getConfig().getString("home-command-no-home-named").formatted(homeName)));

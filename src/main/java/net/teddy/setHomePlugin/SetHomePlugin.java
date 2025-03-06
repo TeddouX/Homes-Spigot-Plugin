@@ -4,6 +4,7 @@ import net.teddy.setHomePlugin.commands.DelHomeCommand;
 import net.teddy.setHomePlugin.commands.HomeCommand;
 import net.teddy.setHomePlugin.commands.SeeHomesCommand;
 import net.teddy.setHomePlugin.commands.SetHomeCommand;
+import net.teddy.setHomePlugin.listeners.HomesListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class SetHomePlugin extends JavaPlugin {
@@ -19,6 +20,8 @@ public final class SetHomePlugin extends JavaPlugin {
         getCommand("home").setExecutor(new HomeCommand());
         getCommand("delhome").setExecutor(new DelHomeCommand());
         getCommand("seehomes").setExecutor(new SeeHomesCommand());
+        
+        getServer().getPluginManager().registerEvents(new HomesListener(), this);
     }
 
     @Override
